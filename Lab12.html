@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+<style>
+
+body {background-color: burlywood;}
+h1   {text-align:center;
+	  color: darkcyan;
+	  font-style:oblique;}
+h2   {color: green;
+	  font-weight: bold;
+	  font-size:25px;}
+h3   {color: slateblue; 
+	  font-weight: bold;
+	  font-size: 25px;}
+p    {color: red;}
+button {background-color: green; 
+  		font-size: 15px;}
+label {color: slateblue;}
+ 		
+</style>
+</head>
+	<body>
+
+		<h1>Lab 11</h1>
+		<h2> Displaying today's date </h2>
+		<button type = "button" onclick = "document.getElementById('date').innerHTML = Date()"">
+		Click to display date</button>
+		<p id = "date"></p>
+
+		<h3> Contact Form </h3>
+		<label for = "firstname">First Name: </label>
+		<input type = "text" id = "firstname" name = "firstname"><br>
+		<label for = "lastname">Last Name: </label>
+		<input type = "text" id = "lastname" name = "lastname"><br>
+		<label for = "phonenumber">Phone Number: </label>
+		<input type = "text" id = "phonenumber" name = "phonenumber"><br><br>
+		<button type="button">Submit contact info</button>
+
+	</body>
+</html>
